@@ -12,7 +12,7 @@ UTILS=scripts/utils.sh
 ASSETS=scripts/render-assets.sh
 COLORS=scripts/colors.py
 PATCH=scripts/patch.sh
-THEME=SolarizdDark
+THEME=SolarizedDark
 INSTALL_DIR=$(DESTDIR)/usr/share/themes/Numix$(THEME)
 
 all: clean gresource
