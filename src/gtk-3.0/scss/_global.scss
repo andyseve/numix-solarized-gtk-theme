@@ -1,0 +1,79 @@
+// scss-lint:disable ColorVariable
+
+@import "functions";
+
+// default color scheme
+$bg_color: if($variant == "dark", #002b36, #03222a);
+$fg_color: if($variant == "dark", #eee8d5, #586e75);
+$base_color: if($variant == "dark", #073642, #073642);
+$text_color: if($variant == "dark", #839496, #839496);
+$selected_bg_color: #657b83;
+$selected_fg_color: #fdf6e3;
+$tooltip_bg_color: #002b36;
+$tooltip_fg_color: #eee8d5 ;
+
+// dark colors
+$dark_bg_color: if($variant == 'dark', #002b36, #002b36);
+$dark_fg_color: if($variant == 'dark', #839496, #839496);
+
+// shadows
+$dark_shadow: #000000;
+$light_shadow: #ffffff;
+
+// white and black
+$black: #000000;
+$white: #ffffff;
+
+// misc colors used by gtk+
+$info_fg_color: if($variant == 'dark', #268bd2, #268bd2);
+$info_bg_color: if($variant == 'dark', #fdf6e3, #fdf6e3);
+$warning_fg_color: if($variant == 'dark', #b58900, #b58900);
+$warning_bg_color: if($variant == 'dark', #fdf6e3, #fdf6e3);
+$question_fg_color: if($variant == 'dark', #cb4b16, #cb4b16);
+$question_bg_color: if($variant == 'dark', #fdf6e3, #fdf6e3);
+$error_fg_color: if($variant == 'dark', #dc322f, #dc322f);
+$error_bg_color: if($variant == 'dark', #fdf6e3, #fdf6e3);
+$link_color: if($variant == 'dark', #d33682, #d33682);
+$success_color: if($variant == 'dark', #859900, #859900);
+$warning_color: if($variant == 'dark', #cb4b16, #cb4b16);
+$error_color: if($variant == 'dark', #dc322f, #dc322f);
+
+$toolbar_bg_color: $bg_color;
+$toolbar_fg_color: $fg_color;
+
+$titlebar_bg_color: $dark_bg_color;
+$titlebar_fg_color: $dark_fg_color;
+
+$menu_bg_color: $dark_bg_color;
+$menu_fg_color: $dark_fg_color;
+
+$menubar_bg_color: $dark_bg_color;
+$menubar_fg_color: $dark_fg_color;
+
+$panel_bg_color: $dark_bg_color;
+$panel_fg_color: $dark_fg_color;
+
+$osd_base: $dark_bg_color;
+$osd_fg: $dark_fg_color;
+$osd_bg: alpha($osd_base, 0.8);
+
+$lightdm_bg_color: $dark_bg_color;
+$lightdm_fg_color: $dark_fg_color;
+
+$wm_bg: $titlebar_bg_color;
+$wm_border_focused: transparent;
+$wm_border_unfocused: transparent;
+$wm_title_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
+$wm_title_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
+$wm_icons_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
+$wm_icons_focused_prelight: $selected_bg_color;
+$wm_icons_focused_pressed: shade($selected_bg_color, .8);
+$wm_icons_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
+$wm_icons_unfocused_prelight: $selected_bg_color;
+$wm_icons_unfocused_pressed: shade($selected_bg_color, .8);
+
+// widget styles
+$roundness: 2px;
+$spacing: 5px;
+$gradient: 0;
+$contrast: .8;
